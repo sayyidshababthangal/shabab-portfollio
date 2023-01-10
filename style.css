@@ -1,0 +1,330 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+      /* <!-- #navibar# --> */
+.nav-pic{
+    width: 50px;
+    height: 50px;
+    border-radius: 30px;
+
+}
+#nav-link{
+    color: rgba(255, 255, 255, 0.628);
+}
+#nav-link:hover{
+    color: rgb(255, 255, 255);
+}
+.nav-pic:hover{
+    opacity: .8;
+}
+.icon-nav-link{
+    width: 30px;
+    height: 30px;
+    padding: 5px;
+    filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(103deg) brightness(105%) contrast(105%);
+}
+#navbar-background{
+    background-color:rgba(0, 0, 0, 0.959) ;
+}
+#S{
+    color: #1a5a32;
+    font-family: fantasy;
+}
+.navbar-toggler{
+    background-color: #1a5a32;
+}
+.navbar-nav{
+    margin: 0 auto;
+}
+
+
+
+       /* <!-- #main-part# --> */
+
+#main-part{
+    min-width: 100%;
+    min-height: 100vh;
+    
+    display: flex;
+    /* background-image: url('image/wallpaperflare.com_wallpaper\ \(17\).jpg'); */
+    background-color: rgba(0, 0, 0, 0.959);
+    
+    
+}
+#main-part1{
+    min-width: 50%;
+    min-height: 100vh;
+    background-color: rgba(0, 0, 0, 0.959);
+    
+}
+#hello-text{
+    color: white;
+    padding-top: 120px;
+    margin: 0px 54px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 20px;
+}
+#text-animation{
+    padding-top: 10%;
+    
+    width: 55%;
+    height: 40px;
+    margin: 0px 50px ;
+    /* background-color: #fff; */
+}
+#main{
+    display: inline-flex;
+  }
+  #main #static-text{
+    font-size: 20px;
+    color: #fff;
+    font-weight: 00;
+    
+  }
+  #main #daynamic-text{
+    margin: -6px 2px;
+    line-height: 45px;
+    height: 45px;
+    
+    overflow: hidden;
+  }
+  #daynamic-text li{
+    list-style: none;
+    font-size: 20px;
+    font-weight: 0;
+    color: green;
+    position: relative;
+    top: 0;
+    animation: solid 6s steps(4)infinite;
+  }
+  @keyframes solid {
+    100%{
+    top: -185px
+    }
+
+  }
+  
+  #daynamic-text li span{
+    position: relative;
+    padding: 10px;
+  }
+  #daynamic-text li span::after{
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    border-left: 2px solid #1a5a32;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.959);
+    animation: typing 1.5s steps(12)infinite;
+  }
+  @keyframes typing {
+    100%{
+    left: 100%;
+    margin: 0px -35px 0px 35px;
+    }
+
+  }
+#fullstack-text{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: rgba(255, 255, 255, 0.795);
+    font-size: 55px;
+    margin: 60px 50px;
+}
+.developer{
+    color: #1a5a32;
+    font-family: fantasy;
+}
+#content-fullstack{
+    margin: 30px 40px;
+    padding: 10px;
+    color: rgb(196, 194, 194);
+}
+#main-part2{
+    min-width: 50%;
+    min-height: 100vh;
+    background-color: rgba(0, 0, 0, 0.959);
+}
+#profile{
+    min-height: 750px;
+    max-width: 700px;
+    margin: -70px 0px;
+    
+    
+}
+.profile-center{
+    text-align: center;
+}
+#resume{
+    color: #1a5a32;
+}
+#resume:hover{
+    color: #348d56;
+}
+#shabab{
+    font-family: cursive;
+}
+
+
+
+
+
+/* <!-- #skills# --> */
+
+#skills{
+    min-width: 100%;
+    min-height: 450px;
+    /* background-color: chartreuse; */
+    /* background-color: rgba(128, 128, 128, 0.589); */
+    background-color: #2C3333;
+}
+#skill-s{
+    text-align: center;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    padding: 10px;
+    color: #fff;
+}
+#skill-text{
+    /* background-color: white; */
+    
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 20px;
+    margin: 4px 20px;
+    color: #fff;
+}
+#progress-bar-color{
+    background-color:#1a5a32 ;
+}
+
+/* <!-- #skills-Overview# --> */
+
+
+#Skills-Overview{
+    min-width: 100%;
+    min-height: 700px;
+    background-color:rgba(0, 0, 0, 0.959) ;
+    padding-top: 30px;
+
+}#skill-head{
+    text-align: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: #fff;
+}
+#skill-experience{
+   padding-left: 15%;
+   padding-right: 15%;
+    text-align: center;
+    color: rgba(255, 255, 255, 0.683);
+    
+}
+#card-decks{
+    width: 80% ;
+    min-height: 380px;
+    /* background-color: springgreen; */
+    /* padding-left: 10%; */
+    /* padding-right: 10%; */
+
+    margin: 5% 10%;
+}
+#list{
+    margin: 5px 40px;
+    color: white;
+}
+#icons-skills{
+    margin: 0 auto;
+    width: 130px;
+    height: 120px;
+    border-radius: 10px;
+    margin-top: 30px;
+    filter: invert(25%) sepia(16%) saturate(2051%) hue-rotate(90deg) brightness(98%) contrast(84%);
+    filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(103deg) brightness(105%) contrast(105%);
+    
+
+}
+
+#icons-skills1{
+    text-align: center;
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+/* // Extra small devices (portrait phones, less than 576px)
+// No media query since this is the default in Bootstrap */
+
+/* // Small devices (landscape phones, 576px and up) */
+@media (max-width: 576px) { 
+    #main-part{
+        display: block;
+    }
+    #main-part2{
+        display: none;
+    }
+    /* #hello-text{
+        
+        padding-top: 50px;
+        margin: 0px 24px;
+        
+    }
+    #fullstack-text{
+        
+        font-size: 40px;
+        margin: 0px 20px;
+    }
+    #content-fullstack{
+        margin: 10px 20px ;
+    } */
+    
+
+
+
+  
+
+
+ }
+
+/* // Medium devices (tablets, 768px and up) */
+@media (max-width: 768px) {
+    #main-part{
+        display: block;
+    }
+    #main-part2{
+        display: none;
+    }
+    #profile{
+        display: none;
+    }
+  
+
+ }
+
+/* // Large devices (desktops, 992px and up) */
+@media (max-width: 992px) { 
+    #profile{
+        display: none;
+    }
+    
+ }
+
+/* // Extra large devices (large desktops, 1200px and up) */
+@media (max-width: 1200px) {
+   
+ }
+ 
+
+
+
+
+

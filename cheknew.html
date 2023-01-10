@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: 'Poppins', sans-serif;
+      }
+      body{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        min-height: 100vh;
+        background-color: rgb(37, 35, 35);
+      }
+      #main{
+        display: inline-flex;
+      }
+      #main #static-text{
+        font-size: 60px;
+        color: #fff;
+        font-weight: 400;
+      }
+      #main #daynamic-text{
+        margin-left: 15px;
+        line-height: 88px;
+        height: 90px;
+        
+        overflow: hidden;
+      }
+      #daynamic-text li{
+        list-style: none;
+        font-size: 60px;
+        font-weight: 500;
+        color: green;
+        position: relative;
+        top: 0;
+        animation: solid 6s steps(4)infinite;
+      }
+      @keyframes solid {
+        100%{
+        top: -360px
+        }
+
+      }
+      
+      #daynamic-text li span{
+        position: relative;
+        padding: 10px;
+      }
+      #daynamic-text li span::after{
+        content: "";
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        border-left: 2px solid green;
+        left: 0;
+        background-color: rgb(37, 35, 35);
+        animation: typing 1.5s steps(12)infinite;
+      }
+      @keyframes typing {
+        100%{
+        left: 100%;
+        margin: 0 -35px 0 35px;
+        }
+
+      }
+    </style>
+</head>
+
+<body>
+    <div>
+        <p id="main">
+            <p id="static-text">i'm</p>
+            <p id="daynamic-text">
+                <li><span>Shabab</span></li>
+                <li><span>a Designer</span></li>
+                <li><span>a Developer</span></li>
+                <li><span>a Freelancer</span></li>
+            </p>
+
+        </p>
+    </div>
+
+</body>
+
+</html>
